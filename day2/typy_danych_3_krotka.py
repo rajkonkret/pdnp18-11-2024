@@ -38,4 +38,3 @@ print(len(tupla_imiona))  # długość 6
 print(sorted(tupla_imiona))  # ['Ania', 'Marcin', 'Radek', 'Tomek', 'Zenek', 'Zosia']
 # nie zmieni krotki
 print(tupla_imiona)  # ('Radek', 'Tomek', 'Zenek', 'Marcin', 'Ania', 'Zosia')
-
