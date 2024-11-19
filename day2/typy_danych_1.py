@@ -113,3 +113,4 @@ print(f"Porównanie {a <= b = }")  # Porównanie a <= b = False
 print(f"Porównanie {a >= b = }")  # Porównanie a >= b = True
 print(f"Porównanie {a} == {b} = {a == b}")  # == porównanie, czy a równa się b,Porównanie 8 == 6 = False
 print(f"Porównanie {a} != {b} = {a != b}")  # != porównanie, czy a różne od b, Porównanie 8 != 6 = True
+# typy primitywne - str, int, bool, float
