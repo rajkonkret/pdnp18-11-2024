@@ -103,3 +103,13 @@ print(False and True)  # False
 print(False or True)  # True
 
 print(not False)  # True
+
+a = 8
+b = 6
+# f - fstring, w klamerkach {} zostanie wpisana wartość zmiennej
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 8 > 6 = True
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 8 < 6 = False
+print(f"Porównanie {a <= b = }")  # Porównanie a <= b = False
+print(f"Porównanie {a >= b = }")  # Porównanie a >= b = True
+print(f"Porównanie {a} == {b} = {a == b}")  # == porównanie, czy a równa się b,Porównanie 8 == 6 = False
+print(f"Porównanie {a} != {b} = {a != b}")  # != porównanie, czy a różne od b, Porównanie 8 != 6 = True
