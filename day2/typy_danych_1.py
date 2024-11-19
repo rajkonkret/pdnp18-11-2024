@@ -50,3 +50,56 @@ print(f"""
 {wiek} {rok}""")
 # "
 # 47 2024"
+
+# typ logiczny, boolean
+# prawda fałsz
+# True False - z dużej literami
+# 1 - prawda, 0 - fałsz
+
+czy_znasz_pythona = True
+print(type(czy_znasz_pythona))  # <class 'bool'>, typ logiczny
+print(czy_znasz_pythona)  # True
+
+print(int(True))  # 1
+print(int(False))  # 0
+
+print(bool(1))  # bool() zamiana (rzutowanie) na typ logiczny, True
+print(bool(100))  # True
+print(bool(-10))  # True
+print(bool("radek"))  # True
+
+print(bool(0))  # False
+print(bool(""))  # False
+print(bool(None))  # None - nic, stan nieokreslony, nie wiem -> null w innych systemach
+
+print(bool(" "))  # True
+print(bool())  # False
+
+# działąnia logiczne
+# and - i
+# Expression    Evaluates to
+# True and True    True
+# True and False    False
+# False and True    False
+# False and False    False
+
+# or - lub
+# The or Operator’s Truth Table:
+#
+# Expression    Evaluates to
+# True or True    True
+# True or False    True
+# False or True    True
+# False or False    False
+# The not Operator’s Truth Table:
+#
+# Expression    Evaluates to
+# not True    False
+# not False   True
+# and, or, not
+
+print(False and True)  # False
+
+print(False or True)  # True
+
+print(not False)  # True
