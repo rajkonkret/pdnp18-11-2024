@@ -38,3 +38,32 @@ print(len(tupla_imiona))  # długość 6
 print(sorted(tupla_imiona))  # ['Ania', 'Marcin', 'Radek', 'Tomek', 'Zenek', 'Zosia']
 # nie zmieni krotki
 print(tupla_imiona)  # ('Radek', 'Tomek', 'Zenek', 'Marcin', 'Ania', 'Zosia')
+
+# rozpakowanie tupli
+tup = 1, 2
+print(type(tup))  # <class 'tuple'>
+a, b = 1, 2
+print(a, b)  # 1 2
+a, b = tup
+print(a, b)  # 1 2
+tup2 = 1, 2, 3
+# a, b = tup2  # ValueError: too many values to unpack (expected 2)
+a, *b = tup2  # * worek na dane
+print(a, b)  # 1 [2, 3]
+
+print(tupla_imiona)
+# name1, name2, name3
+name1, name2, *name3 = tupla_imiona
+print(name1, name2, name3)  # Radek Tomek ['Zenek', 'Marcin', 'Ania', 'Zosia']
+
+name1, *name2, name3 = tupla_imiona
+print(name1, name2, name3)  # Radek ['Tomek', 'Zenek', 'Marcin', 'Ania'] Zosia
+
+*name1, name2, name3 = tupla_imiona
+print(name1, name2, name3)  # ['Radek', 'Tomek', 'Zenek', 'Marcin'] Ania Zosia
+
+tupla_lista = list(tupla_imiona)
+print(tupla_lista)  # ['Radek', 'Tomek', 'Zenek', 'Marcin', 'Ania', 'Zosia']
+print(type(tupla_lista))  # <class 'list'>
+
+print("Radek" in tupla_lista)  # True
