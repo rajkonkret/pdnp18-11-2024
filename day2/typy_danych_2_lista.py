@@ -2,6 +2,7 @@
 # lista - przechowuje dowolną ilość danych
 # może przechowywac rózne typy na raz, int, str w jedej liscie
 # zachowuje kolejnośc przy dodawaniu elementów
+from sys import base_prefix
 
 # pusta lista
 lista = []
@@ -92,3 +93,31 @@ print(lista)  # ['Radek', 'Marcin', 'Tomek', 'Paweł', 'Mikołaj', 'Zenek', 'Zen
 print(lista.pop(-2))  # Zenek
 print(lista.pop())  # Zenek, ostatni element z listy
 print(lista)  # ['Radek', 'Marcin', 'Tomek', 'Paweł', 'Mikołaj']
+
+a = 1
+b = 3
+a = b
+print(a, b)  # 3 3
+print(f"{a=}, {b=}")
+# a = 3, b = 3
+
+b = 7
+print(f"{a=}, {b=}")
+
+lista_2 = lista  # a = b, kopia referencji, adres w pamięci
+
+print(lista)
+print(lista_2)
+# ['Radek', 'Marcin', 'Tomek', 'Paweł', 'Mikołaj']
+# ['Radek', 'Marcin', 'Tomek', 'Paweł', 'Mikołaj']
+lista_copy = lista.copy()
+lista.clear()  # clear() usuń wszystkie elementy z listy
+print(lista)  # []
+print(lista_2)  # []
+print(lista_copy)  # []
+print(id(lista))
+print(id(lista_2))
+print(id(lista_copy)) # ['Radek', 'Marcin', 'Tomek', 'Paweł', 'Mikołaj']
+# 2379788915072
+# 2379788915072
+# 2379792596736
