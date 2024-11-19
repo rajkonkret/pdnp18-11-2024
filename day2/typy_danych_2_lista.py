@@ -117,7 +117,64 @@ print(lista_2)  # []
 print(lista_copy)  # []
 print(id(lista))
 print(id(lista_2))
-print(id(lista_copy)) # ['Radek', 'Marcin', 'Tomek', 'Paweł', 'Mikołaj']
+print(id(lista_copy))  # ['Radek', 'Marcin', 'Tomek', 'Paweł', 'Mikołaj']
 # 2379788915072
 # 2379788915072
 # 2379792596736
+
+liczby = [54, 999, 34, 22, 12.34, 687]
+print(liczby)  # [54, 999, 34, 22, 12.34, 687]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()
+print(liczby)  # zmienia oryginalna kolekcję
+# [12.34, 22, 34, 54, 687, 999]
+
+
+liczby = [54, 999, 34, 22, 12.34, 687, "A"]
+print(liczby)  # [54, 999, 34, 22, 12.34, 687, 'A']
+print(type(liczby))
+
+# liczby.sort()  # TypeError: '<' not supported between instances of 'str' and 'int'
+
+# sortowanie
+lista_osob = ['radek', 'ola', 'lena', 'zenek']
+lista_osob.sort()
+print(lista_osob)  # ['lena', 'ola', 'radek', 'zenek']
+
+# odwróćenie bez sortowaia
+lista_osob.reverse()
+print(lista_osob)  # ['zenek', 'radek', 'ola', 'lena']
+
+# sortowanie z odwróceniem
+lista_osob.sort(reverse=True)
+print(lista_osob)  # ['zenek', 'radek', 'ola', 'lena']
+
+liczby[3] = 666
+print(liczby[0:3])
+print(liczby[-2])
+print(liczby)
+# [54, 999, 34]
+# 687
+# [54, 999, 34, 666, 12.34, 687, 'A']
+
+print(liczby.pop(2))
+liczby.remove(54)
+print(liczby)  # [999, 666, 12.34, 687, 'A']
+
+del liczby  # usunięcie listy z pamięci
+# print(liczby) # NameError: name 'liczby' is not defined
+
+# rozpakowanie sekwencji
+tekst = "Pyth on."
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
+
+krotka = tuple(lista_osob)
+print(type(krotka))
+print(krotka)
+# <class 'tuple'>
+# ('zenek', 'radek', 'ola', 'lena')
