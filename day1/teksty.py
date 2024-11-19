@@ -34,3 +34,11 @@ print(tekst_zamiana.replace("dobry ", " "))  # Witaj  Świecie
 # strip() - usunięcie białych znków i spacji na początku i końcu tekstu
 print(tekst.removeprefix("Witaj").strip())  # "Świecie"
 print(tekst.removesuffix("Świecie").strip())  # "Witaj"
+
+print(tekst[4])  # indeks numer 4, literka "j"
+
+encode_s = tekst.encode('utf-8')
+print(encode_s)  # b'Witaj \xc5\x9awiecie'
+print(type(encode_s))  # <class 'bytes'>, typ bajtowy
+# \xc5\x9 - zapis szesnastkowy, \xc5 - 197
+print(encode_s.decode('utf-8'))  # Witaj Świecie
