@@ -54,9 +54,9 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 7}
 # pobrac wie liczby -> 2 x input()
 # wypisać wynik dodawania -> print()
 
-a = input("Podaj pierwszą liczbę")
-b = float(input("Podaj drugą liczbę"))
-print(int(a) + b)
+# a = input("Podaj pierwszą liczbę")
+# b = float(input("Podaj drugą liczbę"))
+# print(int(a) + b)
 # Podaj pierwszą liczbę5
 # Podaj drugą liczbę6
 # 11.0
@@ -67,3 +67,18 @@ print(int(a) + b)
 # zdefiniowane słowa -> słownik
 # pobrac od uzytkownika słowo do przetłumaczenia
 # wypisac tłumaczenie, wypisac wartość dla danego klucza
+pol_ang = {'kot': 'cat', 'pies': 'dog'}
+print("Mam takie słowa w słowniku", pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia")
+# print(pol_ang[odp.lower().strip()])
+print(pol_ang.get(odp.lower().strip()))
+print(pol_ang.get(odp.casefold().strip()))  # ẞ -> ss -> casefold()
+print(pol_ang.get(odp.casefold().strip()), "nie mo")  # ẞ -> ss -> casefold()
+# Mam takie słowa w słowniku dict_keys(['kot', 'pies'])
+# Podaj słówko do przetłumaczeniaKoT
+# cat
+# cat
+# Podaj słówko do przetłumaczeniapatelnnia
+# None
+# None
+# None nie mo
