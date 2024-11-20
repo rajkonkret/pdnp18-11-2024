@@ -20,7 +20,7 @@ except TypeError:
 except ValueError:
     print("Bład wartości")
 except Exception as e:  # pozostałe błędy
-    print("Bład", e)
+    print("Bład", e)  # Bład 'Nie ma klucza'
 else:  # tylko gdy nie ma błedu
     print("Wynik", wynik)
 finally:  # wykona się zawsze niezależnie od błedu
