@@ -2,6 +2,8 @@
 # for - pętla iteracyjna
 import random
 
+from day1.teksty import encode_s
+
 for i in range(5):  # od 0 do 4
     print(i)
 # 0
@@ -78,3 +80,90 @@ for c in lista_wylosowane:
 # Większe od 10
 # Większe od 10
 # Mniejsze
+
+for i in range(0, 10, 2):  # (start, stop,krok)
+    print(i)
+# 0
+# 2
+# 4
+# 6
+# 8
+
+for i in range(10, 0, -2):  # krok ujemny, czyli w dół
+    print(i)
+# 10
+# 8
+# 6
+# 4
+# 2
+
+for i in range(-5, 0):
+    print(i)
+# -5
+# -4
+# -3
+# -2
+# -1
+
+for c in lista3:
+    if c == 2:
+        c += 1
+        print("Tylko gdy c=2", c)
+    print("Przy każdym elemencie pętli", c)
+# Przy każdym elemencie pętli 0
+# Tylko gdy c=2 3
+# Przy każdym elemencie pętli 3
+# Przy każdym elemencie pętli 4
+# Przy każdym elemencie pętli 6
+# Przy każdym elemencie pętli 8
+
+imiona = ['Radek', 'Tomek', "Zenek", "Ania"]
+print(type(imiona))
+print(imiona)
+# <class 'list'>
+# ['Radek', 'Tomek', 'Zenek', 'Ania']
+
+for p in imiona:
+    print(p)
+# Radek
+# Tomek
+# Zenek
+# Ania
+
+# 0 Radek
+
+for i in range(len(imiona)):  # range(4) od 0 do 3
+    print(i, imiona[i])
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+
+for i in imiona:
+    print(imiona.index(i), i)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+
+# enumerate() - zwraca elemnt i pozycję na której się znajduje
+for p in enumerate(imiona):
+    print(p)
+# (0, 'Radek')
+# (1, 'Tomek')
+# (2, 'Zenek')
+# (3, 'Ania')
+a, b = (3, 'Ania')
+print(a, b)  # 3 Ania
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+for i, o in enumerate(imiona, start=1):
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Zenek
+# 4 Ania
