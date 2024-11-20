@@ -43,3 +43,8 @@ print(dictionary)  # {'imie': 'Tomek', 'wiek': 38, 'date': '12-12-2024'}
 dict_small = {'x': 2}
 dict_small.update([('y', 3), ("z", 7)])  # dodanie danych do słownika w postaci krotek (klucz, wartosc)
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 7}
+
+# input() - pobiera dane od użytkownika
+tekst = input("Podaj imię")
+print(tekst)
+print(type(tekst)) # zawsze bezie str
