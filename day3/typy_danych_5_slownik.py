@@ -45,6 +45,25 @@ dict_small.update([('y', 3), ("z", 7)])  # dodanie danych do słownika w postaci
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 7}
 
 # input() - pobiera dane od użytkownika
-tekst = input("Podaj imię")
-print(tekst)
-print(type(tekst)) # zawsze bezie str
+# tekst = input("Podaj imię")
+# print(tekst)
+# print(type(tekst))  # zawsze bedzie str
+# ctrl / - komentarz
+
+# napisac aplikacje kalkulator
+# pobrac wie liczby -> 2 x input()
+# wypisać wynik dodawania -> print()
+
+a = input("Podaj pierwszą liczbę")
+b = float(input("Podaj drugą liczbę"))
+print(int(a) + b)
+# Podaj pierwszą liczbę5
+# Podaj drugą liczbę6
+# 11.0
+# ctrl alt l - formatowanie
+
+# napisac aplikację słownik
+# pol - ang
+# zdefiniowane słowa -> słownik
+# pobrac od uzytkownika słowo do przetłumaczenia
+# wypisac tłumaczenie, wypisac wartość dla danego klucza
