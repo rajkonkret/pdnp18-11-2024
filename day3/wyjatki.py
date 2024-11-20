@@ -21,11 +21,10 @@ except ValueError:
     print("Bład wartości")
 except Exception as e:  # pozostałe błędy
     print("Bład", e)
-else: # tylko gdy nie ma błedu
-    print("Wynik",wynik)
+else:  # tylko gdy nie ma błedu
+    print("Wynik", wynik)
 finally:  # wykona się zawsze niezależnie od błedu
     print("Następny proszę...")
-
 
 print("Program nadal działą")
 # Nie dziel przez zero
@@ -39,3 +38,4 @@ print("Program nadal działą")
 # Wynik 2.6470588235294117
 # Następny proszę...
 # Program nadal działą
+# try except [else - finally]
