@@ -167,3 +167,54 @@ for i, o in enumerate(imiona, start=1):
 # 2 Tomek
 # 3 Zenek
 # 4 Ania
+
+imiona = ['Radek', 'Tomek', "Zenek", "Ania"]
+wiek = [44, 55, 65, 24]
+
+# wypisać Radek 44
+for i in imiona:
+    print(i, wiek[imiona.index(i)])
+# Radek 44
+# Tomek 55
+# Zenek 65
+# Ania 24
+imiona = ['Radek', 'Tomek', "Zenek", "Ania", "Joanna"]
+wiek = [44, 55, 65, 24]
+
+# wypisać Radek 44
+# for i in imiona:
+#     print(i, wiek[imiona.index(i)]) # IndexError: list index out of range
+# zip() - połącz kolekcje
+for i in zip(imiona, wiek):
+    print(i)
+# ('Radek', 44)
+# ('Tomek', 55)
+# ('Zenek', 65)
+# ('Ania', 24)
+for i, w in zip(imiona, wiek):
+    print(i, w)
+# Radek 44
+# Tomek 55
+# Zenek 65
+# Ania 24
+
+# 0 Radek 44
+for i in enumerate(zip(imiona, wiek)):
+    print(i)
+# (0, ('Radek', 44))
+# (1, ('Tomek', 55))
+# (2, ('Zenek', 65))
+# (3, ('Ania', 24))
+a, b = (0, ('Radek', 44))
+print(a, b)  # 0 ('Radek', 44)
+c, d = ('Radek', 44)
+print(c, d)
+(a, (c, d)) = (0, ('Radek', 44))
+print(f"{a=} {c=} {d=}")  # a=0 c='Radek' d=44
+
+for i, (imie, w) in enumerate(zip(imiona, wiek)):
+    print(i, imie, w)
+# 0 Radek 44
+# 1 Tomek 55
+# 2 Zenek 65
+# 3 Ania 24
