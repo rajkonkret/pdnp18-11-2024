@@ -24,3 +24,46 @@ print(type(data_object))  # <class 'datetime.datetime'>
 # milliseconds = 0, minutes = 0, hours = 0, weeks = 0)
 tomorrow = today + timedelta(days=1)
 print(tomorrow)  # 2024-11-22
+
+# lista przechowuje
+products = [
+    {'sku': 1, 'exp_date': today, 'price': 100},
+    {'sku': 2, 'exp_date': today, 'price': 200},
+    {'sku': 3, 'exp_date': tomorrow, 'price': 300},
+    {'sku': 4, 'exp_date': today, 'price': 50},
+    {'sku': 5, 'exp_date': today, 'price': 99.99},
+]
+
+print(products)
+# [{'sku': 1, 'exp_date': datetime.date(2024, 11, 21), 'price': 100},
+#  {'sku': 2, 'exp_date': datetime.date(2024, 11, 21), 'price': 200},
+#  {'sku': 3, 'exp_date': datetime.date(2024, 11, 22), 'price': 300},
+#  {'sku': 4, 'exp_date': datetime.date(2024, 11, 21), 'price': 50},
+#  {'sku': 5, 'exp_date': datetime.date(2024, 11, 21), 'price': 99.99}]
+
+for p in products:
+    print(p)  # {'sku': 1, 'exp_date': datetime.date(2024, 11, 21), 'price': 100}, słownik
+    print(p['exp_date'])  # odczytanie ze słownika daty przydatności 2024-11-21
+
+    if p['exp_date'] != today:
+        continue  # zakoncz pętle, weź kolejny element
+
+    p['price'] *= 0.8  # price = price * 0.8
+    print(f"""Price for sku {p['sku']}
+is now {p['price']}""")
+# Price for sku 1
+# is now 80.0
+# {'sku': 2, 'exp_date': datetime.date(2024, 11, 21), 'price': 200}
+# 2024-11-21
+# Price for sku 2
+# is now 160.0
+# {'sku': 3, 'exp_date': datetime.date(2024, 11, 22), 'price': 300}
+# 2024-11-22
+# {'sku': 4, 'exp_date': datetime.date(2024, 11, 21), 'price': 50}
+# 2024-11-21
+# Price for sku 4
+# is now 40.0
+# {'sku': 5, 'exp_date': datetime.date(2024, 11, 21), 'price': 99.99}
+# 2024-11-21
+# Price for sku 5
+# is now 79.992
