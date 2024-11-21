@@ -208,7 +208,7 @@ for i in enumerate(zip(imiona, wiek)):
 a, b = (0, ('Radek', 44))
 print(a, b)  # 0 ('Radek', 44)
 c, d = ('Radek', 44)
-print(c, d)
+print(c, d) # Radek 44
 (a, (c, d)) = (0, ('Radek', 44))
 print(f"{a=} {c=} {d=}")  # a=0 c='Radek' d=44
 
