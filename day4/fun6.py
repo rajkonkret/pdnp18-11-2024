@@ -52,3 +52,20 @@ print(f"Zastosowanie map: {list(map(lambda x: x * 14, lista))}")
 # Zastosowanie map: [2, 4, 6, 20, 40, 60, 200, 400, 1000]
 # Zastosowanie map: [4, 8, 12, 40, 80, 120, 400, 800, 2000]
 # Zastosowanie map: [14, 28, 42, 140, 280, 420, 1400, 2800, 7000]
+
+# filtrowanie danych
+l3 = []
+for i in lista:
+    if i < 20:
+        l3.append(i)
+print(l3)  # [1, 2, 3, 10]
+
+# filter() - zwraca elementy spełniające warunek
+print(f"Zastosowanie filter(): {list(filter(lambda x: x < 20, lista))}")  # Zastosowanie filter(): [1, 2, 3, 10]
+# funkcje wyższego rzedu - filter(), map() - przyjmują inną funkcję jako argument
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 20, lista))}")  # Zastosowanie filter(): [30, 100, 200, 500]
+# x > 3 i mniejsze od 100
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 3 and x < 100, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: 3 < x < 100, lista))}")
+# Zastosowanie filter(): [10, 20, 30]
+# Zastosowanie filter(): [10, 20, 30]
