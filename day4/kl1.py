@@ -57,3 +57,8 @@ print(cz2.plec)
 # Radek
 # 49
 # m
+
+# przejscie do katalogu cd day4
+# cd .. wyjscie w gore
+# cd.\day4\
+# pydoc -b - uruchomienie serwera z dokumentacją
