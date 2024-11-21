@@ -19,7 +19,7 @@ class Ptak:
 
 class Kura(Ptak):
     """
-    Klasa Kura dziedziczy z kalsy Ptak
+    Klasa Kura dziedziczy z klasy Ptak
     """
 
     def __init__(self, gatunek):
