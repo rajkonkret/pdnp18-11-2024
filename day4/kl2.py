@@ -18,7 +18,7 @@ class Human:
         self.plec = plec
 
     def ruszaj(self):
-        if self.plec == "m": # cz1.plec ?
+        if self.plec == "m":  # cz1.plec ?
             print("Ruszyłem w drogę")
         else:
             print("Ruszyłam w drogę")
