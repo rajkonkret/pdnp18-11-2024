@@ -32,3 +32,14 @@ products = [
     {'sku': 4, 'exp_date': 'today', 'price': 50},
     {'sku': 5, 'exp_date': "today", 'price': 99.99},
 ]
+
+filename = "records_dict_list.csv"
+# fields_product = ['sku', 'exp_date', 'price']
+fields_product = [k for k in products[0]]  # wyciąga klucze ze słownika
+
+with open(filename, 'w', newline='') as f:
+    csvwriter = csv.DictWriter(f, fieldnames=fields_product, delimiter=";")
+    csvwriter.writeheader()  # zapisz nazwy kolumn
+    csvwriter.writerows(products)  # lista słowników
+
+# delimiter=";" - znak podziału
