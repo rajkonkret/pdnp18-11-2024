@@ -139,3 +139,4 @@ pip install -r .\requirements.txt
 
 pip install pyinstaller
 pyinstaller --onefile --noconsole .\day5\okno1.py
+
