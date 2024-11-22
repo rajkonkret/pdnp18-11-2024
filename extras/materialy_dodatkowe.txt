@@ -132,3 +132,7 @@ Rainbow Brackets - koloryzuje nawiasy
 
 dostępne api
 https://github.com/public-apis/public-apis
+
+
+pip freeze > requirements.txt
+pip install -r .\requirements.txt
