@@ -129,3 +129,6 @@ https://pl.altapps.net/soft/hackerrank-com
 
 Indent Rainbow - pokazuje wyraźnie wcięcia
 Rainbow Brackets - koloryzuje nawiasy
+
+dostępne api
+https://github.com/public-apis/public-apis
