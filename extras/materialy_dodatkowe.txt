@@ -126,3 +126,6 @@ https://pl.altapps.net/soft/hackerrank-com
 () - krotka
 [] - lista
 {} - zbiór lub słownik
+
+Indent Rainbow - pokazuje wyraźnie wcięcia
+Rainbow Brackets - koloryzuje nawiasy
