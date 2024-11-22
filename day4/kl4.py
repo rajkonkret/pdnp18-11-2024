@@ -39,6 +39,9 @@ class Kura(Ptak):
     def wydaj_odglos(self):
         print("ko ko ko ko ko ko")
 
+    def dziobanie(self):
+        print("Idę sobie podziobać")
+
 
 class Orzel(Ptak):
     """
@@ -47,6 +50,10 @@ class Orzel(Ptak):
 
     def wydaj_odglos(self):
         print("kier kir kier")
+
+    def polowanie(self):
+        print("Rozpoczynam polowanie")
+
 
 # TypeError: Can't instantiate abstract class Sowa without an implementation for abstract method 'wydaj_odglos'
 class Sowa(Ptak):
@@ -75,3 +82,17 @@ kur2.wydaj_odglos()
 # TypeError: Can't instantiate abstract class Sowa without an implementation for abstract method 'wydaj_odglos'
 # bo ni e ma metody wydaj_odglos
 # sowa = Sowa("Sowa", 15)
+kur2.dziobanie()
+or2.polowanie()
+# Idę sobie podziobać
+# Rozpoczynam polowanie
+
+# Polimorfizm
+# obiekty róznych klas, dzieki dziedziczeniu mają wspołne cechy.
+# można je traktować w pewnym zakresie tych wspólnych cech jako obiekty takiej samej klasy
+lista = [or2, kur2]  # obiekty różnych klas Orzel, Kura
+
+for i in lista:
+    i.wydaj_odglos()
+# kier kir kier
+# ko ko ko ko ko ko
